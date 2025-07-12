@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sito Semplice</title>
+    <title>Sito con PDF</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,33 +42,39 @@
             bottom: 0;
             width: 100%;
         }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Benvenuto al mio Sito</h1>
+        <h1>PROVA</h1>
     </header>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#about">Chi Siamo</a>
-        <a href="#contact">Contatti</a>
+        <a href="#menu">Menu PDF</a>
     </nav>
 
     <section id="home">
         <h2>Home</h2>
-        <p>Questo è un sito di esempio per mostrarti come si struttura una pagina HTML semplice.</p>
+        <p>Questo è un sito di esempio per mostrarti come visualizzare un PDF.</p>
     </section>
 
     <section id="about">
         <h2>Chi Siamo</h2>
-        <p>Siamo una piccola azienda che si occupa di sviluppo web. Offriamo soluzioni innovative per i nostri clienti.</p>
+        <p>Siamo una piccola azienda che si occupa di sviluppo web.</p>
     </section>
 
-    <section id="contact">
-        <h2>Contatti</h2>
-        <p>Puoi contattarci via email all'indirizzo: <a href="mailto:info@example.com">info@example.com</a></p>
+    <section id="menu">
+        <h2>Menu PDF</h2>
+        <!-- PDF Embedded -->
+        <iframe src="menu.pdf" title="Menu PDF"></iframe>
     </section>
 
     <footer>
